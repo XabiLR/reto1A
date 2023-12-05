@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+   
+    stages {
+        stage('Jenkins1a-1'){
+            steps{
+                echo("Crear y ejecutar un pipeline simple, una sola etapa con un “echo”")
+            }
+        }
+       
+    }
+}
