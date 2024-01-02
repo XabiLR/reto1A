@@ -44,7 +44,7 @@ def multiply(op_1, op_2):
 def divide(op_1, op_2):
     try:
         num_1, num_2 = util.convert_to_number(op_1), util.convert_to_number(op_2)
-        if num==0:
+        if num_2==0:
             return("Cannot divide by zero",406,HEADERS)
         return ("{}".format(CALCULATOR.divide(num_1, num_2)), http.client.OK, HEADERS)
     except TypeError as e:
